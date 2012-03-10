@@ -1,0 +1,12 @@
+<h1>Welcome to BJ</h1>
+<%= form_for @game do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.submit id: "play" %>
+<% end %>
+
+<script type="text/javascript">
+
+setTimeout(function(){ alert('hello')}, 2000)
+
+</script>

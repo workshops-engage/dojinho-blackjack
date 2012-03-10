@@ -1,0 +1,11 @@
+<h1>Bem vindo <%= @game.name %></h1>
+
+<h1>Dealer Cards</h1>
+<% @game.current_round.dealer_cards.each do |card| %>
+	<div class="card <%= card %>"></div>
+<% end %>
+<div style="clear: both"></div>
+<h1>Player Cards</h1>
+<% @game.current_round.player_cards.each do |card| %>
+	<div class="card <%= card %>"></div>
+<% end %>
